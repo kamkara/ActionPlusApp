@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2022_01_31_150827) do
     t.string "first_name"
     t.string "last_name"
     t.string "full_name"
+    t.string "country"
     t.enum "current_role", default: "volontier", null: false, enum_type: "user_status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
