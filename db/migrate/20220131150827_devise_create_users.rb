@@ -36,7 +36,9 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string :last_name
       t.string :full_name
       t.string :country
-      t.enum :current_role, enum_type: "user_status", default: "volontier", null: false
+      t.enum :current_status, enum_type: "user_status", default: "volontier", null: false
+      t.string :slug
+      t.string :gender
     
 
       t.timestamps null: false

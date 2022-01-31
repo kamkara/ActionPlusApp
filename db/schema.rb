@@ -47,7 +47,9 @@ ActiveRecord::Schema.define(version: 2022_01_31_150827) do
     t.string "last_name"
     t.string "full_name"
     t.string "country"
-    t.enum "current_role", default: "volontier", null: false, enum_type: "user_status"
+    t.enum "current_status", default: "volontier", null: false, enum_type: "user_status"
+    t.string "slug"
+    t.string "gender"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
