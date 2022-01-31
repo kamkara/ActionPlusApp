@@ -2,18 +2,8 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :trackable, authentication_keys:[:logged]
+         :recoverable, :rememberable, :validatable, :trackable
 
-
-  
-  attr_writer :logged
-
-  #enum :role, student: "student", teacher: "teacher", team: "team", default: "student"
-  
-  ################## VALIDATES  ###############
-   before_validation :user_student?,  on: :create
-   
-  
    validates :first_name, :last_name, :full_name, :email, :password,
               :contact, :country, presence: true
     
@@ -22,11 +12,9 @@ class User < ApplicationRecord
               length: { minimum:5, maximum: 30,
               message: "%{value} verifier votre nom complet"}
 
-   validates :contact, uniqueness: true, numericality: { only_integer: true }, length: { minimum:10,
-              message: "%{ value} verifier votre nom numéro est 10 chiffres"}
+   validates :contact, uniqueness: true, numericality: { only_integer: true }
               
-   validates :status, inclusion: { in: %w(volontier published admin member),
-                    message: "%{value} acces non identifier" }
+   
 
 
   def full_name
@@ -51,20 +39,5 @@ class User < ApplicationRecord
     self.contact            = contact.strip.squeeze(" ")
     self.first_name         = first_name.strip.squeeze(" ").downcase.capitalize
     self.last_name          = last_name.strip.squeeze(" ").downcase.capitalize
-  end
-
-  ################## LOGGED  #########
-   
-  def logged
-    @logged || self.contact || self.email
-  end
-
-  def self.find_for_database_authentication(warden_conditions)
-    conditions = warden_conditions.dup
-    if logged = conditions.delete(:logged)
-      where(conditions.to_h).where(["lower(contact) = :value OR lower(email) = :value", { :value => logged.downcase }]).first
-    elsif conditions.has_key?(:contact) || conditions.has_key?(:email)
-      where(conditions.to_h).first
-    end
   end
 end

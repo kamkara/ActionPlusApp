@@ -13,7 +13,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Favicon-->
     <%= favicon_link_tag asset_path('ActionIco.jpg') %>
 
@@ -25,7 +25,7 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="">
       <%= yield %>
     </main>
     <!-- Bootstrap CDN  JS-->
