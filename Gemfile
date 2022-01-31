@@ -27,6 +27,7 @@ gem "stimulus-rails"
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
 gem "tailwindcss-rails"
 gem 'friendly_id', '~> 5.4', '>= 5.4.2'
+gem 'devise', '~> 4.8', '>= 4.8.1'
 
 
 
