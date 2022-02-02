@@ -22,13 +22,13 @@ class ApplicationController < ActionController::Base
       end
 
       def after_sign_in_path_for(resource)
-        added_path
+        feeds_path
       end
 
       def after_sign_up_path_for(resource)
-        added_path # Or :prefix_to_your_route
+        feeds_path # Or :prefix_to_your_route
       end
-      def after_sign_out_path_for(scope)
+      def after_sign_out_path_for(resource_or_scope)
         root_path
       end
     
