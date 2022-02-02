@@ -13,6 +13,7 @@ Rails.application.routes.draw do
               :path_names =>
               { :sign_in =>       'connexion',
                 :sign_out =>      'logout',
+                :sign_up =>         "",
                 :registration =>  'inscription',
                 :edit =>          'edit'
               }
