@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  
+  get "posts", to:"posts#index"
+  get "writing", to:"posts#new"
+  get "posts-edit", to:"posts#edit"
+  get "posts-destroy", to:"posts#delete"
+  #resources :posts
   get "dashboard", to:'dashboard#index'
   root to:'welcome#index'
   get "feeds", to:'welcome#add'
