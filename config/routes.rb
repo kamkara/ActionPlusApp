@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'dashboard/index'
+  get "dashboard", to:'dashboard#index'
   root to:'welcome#index'
   get "feeds", to:'welcome#add'
   
