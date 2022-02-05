@@ -2,6 +2,7 @@ class Post < ApplicationRecord
   belongs_to :user
   has_rich_text :content
 
+  STATUS= ["Brouillon","Public", "Privé", "membres"]
   
   validates :title,
             :content,

@@ -18,15 +18,24 @@
 
   <div class="my-5">
     <%= f.label :Article %>
-    <%= f.rich_text_area :content, rows: 4, class: "input-field bg-white", placeholder:"Ecrivez le texte ..." %>
+    <%= f.rich_text_area :content, rows: 4, class: "input-field bg-white rounded-md resize", placeholder:"Ecrivez le texte ..." %>
   </div>
 
-  <div class="my-5">
-    <%= f.label :status %>
-    <%= f.text_field :status, class: "rounded-md" %>
-  </div>
+  <div class="my-5 font-semibold">
+    <p class="font-normal">Status</p>
 
+    <%= f.radio_button :status, "prive"%>
+    <%= f.label :status, "Encours", class:"mr-4" %>
+    <%= f.radio_button :status, "public" %>
+    <%= f.label :status, "Public", class:"mr-4" %>
+    <%= f.radio_button :status, "Membre" %>
+    <%= f.label :status, "membres", class:"mr-4" %>
+    <%= f.radio_button :status, "archive" %>
+    <%= f.label :status, "Archive" %>
+
+  </div>
+ 
   <div class="inline">
-    <%= f.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+    <%= f.submit "Créer l'article", class: "rounded-lg py-2 px-4 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
   </div>
 <% end %>
