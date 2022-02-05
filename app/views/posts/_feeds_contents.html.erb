@@ -1,11 +1,4 @@
-<% @title="Les articles" %>
-<div class="mx-auto container py-2 px-6">
-<!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
-    <% @posts.each do |post| %>
-        <div class="rounded">
-            <div class="w-full py-2 flex-col justify-between bg-pink-300 rounded-lg border border-pink-300  py-1 px-4">
-                <div>
+<div>
                 <!-- Title-->
                     <h4 class="text-gray-800 font-bold mb-3">
                         <%= truncate(strip_tags(post.content.to_s.html_safe), length: 60) %>
@@ -28,8 +21,3 @@
                         </button>
                     </div>
                 </div>
-            </div>
-        </div>
-    <% end %>
-    </div>
-</div>
