@@ -7,12 +7,14 @@ Rails.application.routes.draw do
   resources :posts
   get "dashboard", to:'dashboard#index'
   root to:'welcome#index'
-  get "feeds", to:'welcome#add'
+  get "adherer", to:'welcome#add'
   
   devise_scope :user do
     get 'profile/edit'    => 'devise/registrations#edit',   :as => :edit_user_registration
     get 'profile/cancel'  => 'devise/registrations#cancel', :as => :cancel_user_registration
+    get '/users/sign_out' => 'devise/sessions#destroy'
   end
+
 
   devise_for  :users,
               :path => '',
