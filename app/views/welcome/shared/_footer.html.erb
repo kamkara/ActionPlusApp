@@ -6,19 +6,19 @@
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <%= link_to root_path, class:"btn btn-outline-light btn-social" do %><i class="fab fa-twitter"></i><% end %>
+                            <%= link_to root_path, class:"btn btn-outline-light btn-social" do %><i class="fab fa-facebook-f"></i><% end %>
+                            <%= link_to root_path, class:"btn btn-outline-light btn-social" do %><i class="fab fa-youtube"></i><% end %>
+                            <%= link_to root_path, class:"btn btn-outline-light btn-social" do %><i class="fab fa-linkedin-in"></i><% end %>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Liens Rapide</h5>
-                        <a class="btn btn-link text-white-50" href="">Mission</a>
-                        <a class="btn btn-link text-white-50" href="">Adhesion</a>
-                        <a class="btn btn-link text-white-50" href="">Nos Actions</a>
-                        <a class="btn btn-link text-white-50" href="">Utilisation des Données</a>
-                        <a class="btn btn-link text-white-50" href="">Termes & Condition d'utilisation</a>
+                        <%= link_to root_path, class:"btn btn-link text-white-50" do %>Mission<% end %>
+                        <%= link_to root_path, class:"btn btn-link text-white-50" do %>Adhesion<% end %>
+                        <%= link_to root_path, class:"btn btn-link text-white-50" do %>Nos Actions<% end %>
+                        <%= link_to root_path, class:"btn btn-link text-white-50" do %>Utilisation des Données<% end %>
+                        <%= link_to root_path, class:"btn btn-link text-white-50" do %>Termes & Condition d'utilisation<% end %>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Action+ en Image</h5>

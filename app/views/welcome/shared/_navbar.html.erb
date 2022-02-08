@@ -13,18 +13,19 @@
             <%= link_to 'Accueil', root_path, class:"nav-item nav-link active" %>
             <%= link_to 'Action+ Mission', mission_path, class:"nav-item nav-link" %>
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">En Action</a>
+                <%= link_to root_path, class:"nav-link dropdown-toggle", data-bs-toggle:"dropdown" do %>En Action<% end %>
                 <div class="dropdown-menu rounded-0 m-0">
-                    <a href="#" class="dropdown-item">Axe 1</a>
-                    <a href="#" class="dropdown-item">Axe 2</a>
-                    <a href="#" class="dropdown-item">Axe 3</a>
+                    <%= link_to root_path, class:"dropdown-item" do %>Axe 1<% end %>
+                    <%= link_to root_path, class:"dropdown-item" do %>Axe 2<% end %>
+                    <%= link_to root_path, class:"dropdown-item" do %>Axe 3<% end %>
                 </div>
             </div>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu rounded-0 m-0">
-                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    <a href="404.html" class="dropdown-item">404 Error</a>
+                    <%= link_to 'Testimonial', root_path, class:"dropdown-item" %>
+                    <%= link_to '404 Error', root_path, class:"dropdown-item" %>
+                    
                 </div>
             </div>        
             <%= link_to 'Adherer', root_path, class:"nav-item nav-link" %>
