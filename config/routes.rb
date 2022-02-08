@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
   
+  root to:'welcome#index'
   get "writing", to:"posts#new"
-  #get "posts", to:"posts#index"
   get "posts-edit", to:"posts#edit"
   get "posts-destroy", to:"posts#delete"
-  resources :posts
+  get "mission", to:"abouts#index"
+  get "mission-created", to:"abouts#new"
+  get "mission-edit", to:"abouts#edit"
   get "dashboard", to:'dashboard#index'
-  root to:'welcome#index'
   get "adherer", to:'welcome#add'
+  resources :posts
+  resources :abouts
   
   devise_scope :user do
     get 'profile/edit'    => 'devise/registrations#edit',   :as => :edit_user_registration
