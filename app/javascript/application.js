@@ -7,11 +7,6 @@ import "controllers"
 import "trix"
 import "@rails/actiontext"
 
-//= require jquery
-//= require jquery_ujs
-//= require popper
-//= require bootstrap
-
 // import js components
 //import "./components/wow.min.js"
 //import "./components/easing.min.js"
