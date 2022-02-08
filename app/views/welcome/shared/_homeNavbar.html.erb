@@ -1,29 +1,38 @@
-<section class="py-8 px-4 lg:px-10 bg-blue-500">
-  <nav class="relative flex justify-between items-center">
-    <a class="text-2xl text-white font-bold" href="#">
-      <%= image_tag 'ActionIco.jpg', class:"h-10", width:"auto" %>
+<!-- Navbar Start -->
+<div class="container-fluid nav-bar bg-transparent">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+    <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+      <div class="icon p-2 me-2">
+        <%= image_tag 'ActionIco.jpg', alt:"Action+", style:"width: 30px; height: 30px;", class:"img-fluid" %>
+      </div>
+      <h1 class="m-0 text-primary">Action+</h1>
     </a>
-    <button class="p-2 navbar-burger">
-      <svg class="w-10 h-3" width="39" height="13" viewbox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="39" height="2" rx="1" fill="#C4C4C4"></rect><rect x="19" y="11" width="20" height="2" rx="1" fill="#C4C4C4"></rect></svg>
-    </button>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">About</a>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Property</a>
+                  <div class="dropdown-menu rounded-0 m-0">
+                      <a href="property-list.html" class="dropdown-item">Property List</a>
+                      <a href="property-type.html" class="dropdown-item">Property Type</a>
+                      <a href="property-agent.html" class="dropdown-item">Property Agent</a>
+                  </div>
+              </div>
+              <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu rounded-0 m-0">
+                      <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                      <a href="404.html" class="dropdown-item">404 Error</a>
+                  </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Add Property</a>
+        </div>
   </nav>
-  <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
-    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
-    <nav class="relative flex flex-col py-8 h-full w-full bg-white overflow-y-auto">
-      <div class="flex items-center mb-16 pr-6">
-        <a class="ml-10 text-2xl text-gray-800 font-bold" href="#">
-          <%= image_tag 'ActionIco.jpg', class:"h-7", width:"auto" %>
-        </a>
-      </div>
-      <div>
-        <ul>
-          <li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Product</a></li>
-          <li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Story</a></li>
-          <li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Features</a></li>
-          <li class="mb-1 px-10"><a class="block pl-8 py-4 text-xl text-gray-800 hover:bg-blueGray-50 rounded-xl" href="#">Contact</a></li>
-        </ul>
-      </div>
-      
-    </nav>
-  </div>
-</section>
+</div>
+<!-- Navbar End -->
