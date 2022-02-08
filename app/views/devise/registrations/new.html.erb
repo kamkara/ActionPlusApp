@@ -3,8 +3,7 @@
 
 <!-- component -->
 <div class="h-screen md:flex">
-	<div
-		class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
+	<div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
 		<div>
 			<h1 class="text-white font-bold text-4xl font-sans">Action+</h1>
 			<p class="text-white mt-1">Actoin+ en quelques mots!</p>
@@ -20,9 +19,9 @@
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= render "shared/flash" %>
 
-			<h1 class="text-gray-800 font-bold text-2xl mb-1">Bienvenu(e) sur Action+</h1>
+			<h1 class="text-gray-800 font-bold text-2xl mb-1 mt-10">Bienvenu(e) sur Action+</h1>
 			<p class="text-sm font-normal text-gray-600 mb-7">Inscrivez-vous</p>
-			<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+			<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-2">
 				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20"
 					fill="currentColor">
 					<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
@@ -31,7 +30,7 @@
           <%= f.text_field :first_name, class:"pl-2 outline-none border-none", placeholder:"Nom ..." %>
 				
       </div>
-				<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+				<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-2">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
 						viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -40,7 +39,7 @@
           <%= f.text_field :last_name, class:"pl-2 outline-none border-none", placeholder:"Prénom..." %>
 					
       </div>
-				<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+				<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
 						viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -49,7 +48,7 @@
           <%= f.text_field :country, class:"pl-2 outline-none border-none", placeholder:"pays..." %>
 					
       </div>
-      <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+      <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-2">
 						<svg  xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
 							viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M38.789,51.211l10.876,10.876c0.974,0.974,2.471,1.194,3.684,0.543l13.034-6.997c0.964-0.518,2.129-0.493,3.07,0.066
@@ -60,7 +59,7 @@
             </svg>
             <%= f.text_field :contact, placeholder:"N° Tel ..." %>	
           </div>
-					<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+					<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-2">
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
 							viewBox="0 0 24 24" stroke="currentColor">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
