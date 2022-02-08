@@ -13,7 +13,7 @@
             <%= link_to 'Accueil', root_path, class:"nav-item nav-link active" %>
             <%= link_to 'Action+ Mission', mission_path, class:"nav-item nav-link" %>
             <div class="nav-item dropdown">
-                <%= link_to root_path, class:"nav-link dropdown-toggle", data-bs-toggle:"dropdown" do %>En Action<% end %>
+                <%= link_to root_path, class:"nav-link dropdown-toggle", "data-bs-toggle":"dropdown" do %>En Action<% end %>
                 <div class="dropdown-menu rounded-0 m-0">
                     <%= link_to root_path, class:"dropdown-item" do %>Axe 1<% end %>
                     <%= link_to root_path, class:"dropdown-item" do %>Axe 2<% end %>
@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <%= link_to root_path,  class:"nav-link dropdown-toggle", "data-bs-toggle":"dropdown" do %>Pages<% end %>
                 <div class="dropdown-menu rounded-0 m-0">
                     <%= link_to 'Testimonial', root_path, class:"dropdown-item" %>
                     <%= link_to '404 Error', root_path, class:"dropdown-item" %>
