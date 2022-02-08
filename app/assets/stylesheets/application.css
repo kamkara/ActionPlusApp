@@ -14,9 +14,10 @@
  */
 
 @import url("components/main.css");
-@import url("../../views/layouts/home_asset/css/bootstrap.min.css");
-@import url("../../views/layouts/home_asset/css/style.css");
-@import url("../../views/layouts/home_asset/lib/animate/animate.min.css");
+@import url("components/style.css");
+@import url("components/bootstrap.min.css");
+@import url("components/owl.carousel.min.css");
+@import url("components/animate.min.css");
 @import url("components/mobile_navbar.css");
 @import url("components/actiontrix.css");
 @import url("components/actiontext.css");
