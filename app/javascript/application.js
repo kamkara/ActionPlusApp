@@ -13,8 +13,8 @@ import "@rails/actiontext"
 //= require bootstrap
 
 // import js components
-import "./components/easing.min.js"
-import "./components/main.js"
-import "./components/owl.carousel.min.js"
-import "./components/waypoints.min.js"
-import "./components/wow.min.js"
+//import "./components/wow.min.js"
+//import "./components/easing.min.js"
+//import "./components/waypoints.min.js"
+//import "./components/owl.carousel.min.js"
+//import "./components/main.js"
