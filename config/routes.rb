@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to:'welcome#index'
   get "donate", to:'donate#index'
   get 'adhesion', to:'membership#index'
+  get "adhesion-organisation", to:'membership#organisation'
   get "writing", to:"posts#new"
   get "posts-edit", to:"posts#edit"
   get "posts-destroy", to:"posts#delete"
