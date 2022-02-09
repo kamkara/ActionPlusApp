@@ -110,6 +110,7 @@ ActiveRecord::Schema.define(version: 2022_02_09_105745) do
     t.string "gender"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "country_code"
     t.boolean "terms"
     t.boolean "newletter"
     t.string "membership_category"
