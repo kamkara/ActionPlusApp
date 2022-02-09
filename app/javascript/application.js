@@ -8,7 +8,10 @@ import "trix"
 import "@rails/actiontext"
 
 
-require.context('../images', true)
+
+// add these 2 lines
+const images = require.context('../images', true)
+
 
 // import js components
 //import "./components/wow.min.js"
