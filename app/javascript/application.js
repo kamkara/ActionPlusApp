@@ -7,6 +7,9 @@ import "controllers"
 import "trix"
 import "@rails/actiontext"
 
+
+require.context('../images', true)
+
 // import js components
 //import "./components/wow.min.js"
 //import "./components/easing.min.js"

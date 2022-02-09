@@ -9,3 +9,4 @@ pin "trix"
 pin "@rails/actiontext", to: "actiontext.js"
 # add components js  
 pin_all_from "app/javascript/components", under: "components"
+pin_all_from "app/javascript/images", under: "images"
