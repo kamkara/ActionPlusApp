@@ -20,7 +20,7 @@
       <%= render "shared/flash" %>
 
 			<h1 class="text-gray-800 font-bold text-2xl mb-2">Bienvenu(e) sur Action+</h1>
-			<p class="text-sm font-normal text-gray-600 mb-2">Devenez Membre Adhérant de Action+</p>
+			<p class="text-sm font-normal text-gray-600 mb-2">Devenez Membre Adhérant Particulier de Action+</p>
 			<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-2">
           <%= f.text_field :first_name, class:"pl-2 outline-none border rounded-md", placeholder:"Nom ..." %>
           <%= f.text_field :last_name, class:"pl-2 outline-none border ml-2 rounded-md", placeholder:"Prénom..." %>
@@ -38,7 +38,7 @@
       <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
         <%= f.password_field :password, class:"pl-2 outline-none border-none", placeholder:"Mot de passe ..." %>				
       </div>
-
+      <%= f.hidden_field :membership_category, value:"particulier" %>
       <div class="flex items-center  py-2 ">
       <%= f.check_box :terms, value:"oui", class:" mr-4" %>
       <p class="text-sm">
