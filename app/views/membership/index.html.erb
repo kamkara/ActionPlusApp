@@ -1,0 +1,60 @@
+
+<% @title="Adherer a Action+" %>
+
+<!-- component -->
+<div class="h-screen md:flex">
+	<div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
+		<div>
+			<h1 class="text-white font-bold text-4xl font-sans"> Adherer a Action+</h1>
+			<p class="text-white mt-1">Actoin+ en quelques mots!</p>
+			<button type="submit" class="block w-40 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2">La charte d'Action+</button>
+		</div>
+		<div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+		<div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+		<div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+		<div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+	</div>
+	<div class="flex md:w-1/2 justify-center  items-center bg-white">
+	
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "shared/flash" %>
+
+			<h1 class="text-gray-800 font-bold text-2xl mb-2">Bienvenu(e) sur Action+</h1>
+			<p class="text-sm font-normal text-gray-600 mb-2">Devenez Membre Adhérant de Action+</p>
+			<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-2">
+          <%= f.text_field :first_name, class:"pl-2 outline-none border rounded-md", placeholder:"Nom ..." %>
+          <%= f.text_field :last_name, class:"pl-2 outline-none border ml-2 rounded-md", placeholder:"Prénom..." %>
+      </div>
+		<div class="flex items-center border-2 py-1 px-3 rounded-2xl mb-2">
+            <%= f.email_field :email, placeholder:"Addresse Email ...", class:"pl-2 outline-none border-none" %>			
+      	</div>
+				<div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-2">
+          <%= f.text_field :country, class:"pl-2 outline-none border-none", placeholder:"pays..." %>
+      </div>
+      <div class="flex w-full items-center border-2 py-1 px-3 rounded-2xl mb-2">
+        <%= f.text_field :country, class:"pl-2 outline border rounded-md", placeholder:"Code pays..." %>
+        <%= f.text_field :contact, placeholder:"N° telephone ...", class:"pl-2 outline ml-2 border rounded-md" %>	
+      </div>
+      <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
+        <%= f.password_field :password, class:"pl-2 outline-none border-none", placeholder:"Mot de passe ..." %>				
+      </div>
+
+      <div class="flex items-center  py-2 ">
+      <%= f.check_box :terms, value:"oui", class:" mr-4" %>
+      <p class="text-sm">
+        Oui, j'adhère à <%= link_to root_path, class:"font-semibold" do %> la charte des valeurs, aux statuts et 
+        aux règles <br />de fonctionnement  de ACTION+, <% end %> <br />ainsi qu'aux
+        <%= link_to "conditions générales d'utilisation", root_path %> de la plateforme et à la politique <br />
+        de <%= link_to 'protection des données', root_path ,class:"font-semibold" %> à caractère personnel de la plateforme.
+       </p>
+      </div>
+      <div class="flex items-center pb-2 ">
+        <p class="text-sm">
+          <%= f.check_box :newletter, value:"oui", class:"mr-4" %>
+          Je souhaite être informé(e) de l'actualité de Action+ par e-mail (optionnel)
+        </p>
+      </div>
+      <%= f.submit "Oui, Devenir Membre", class:"block w-full bg-indigo-600 mt-2 py-2 pb-2 rounded-2xl text-white font-semibold mb-2" %>
+		<% end %>
+	</div>
+</div>

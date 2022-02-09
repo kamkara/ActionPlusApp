@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
   root to:'welcome#index'
+  get "donate", to:'donate#index'
+  get 'adhesion', to:'membership#index'
   get "writing", to:"posts#new"
   get "posts-edit", to:"posts#edit"
   get "posts-destroy", to:"posts#delete"
@@ -8,7 +10,6 @@ Rails.application.routes.draw do
   get "mission-created", to:"abouts#new"
   get "mission-edit", to:"abouts#edit"
   get "dashboard", to:'dashboard#index'
-  get "adherer", to:'welcome#add'
   resources :posts
   resources :abouts
   
