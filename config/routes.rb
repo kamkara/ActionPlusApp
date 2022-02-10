@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "donate", to:'donate#index'
   get 'adhesion', to:'membership#index'
   get "adhesion-organisation", to:'membership#organisation'
+  get "memberspace", to:'membership#memberspace'
   get "writing", to:"posts#new"
   get "posts-edit", to:"posts#edit"
   get "posts-destroy", to:"posts#delete"
@@ -11,6 +12,8 @@ Rails.application.routes.draw do
   get "mission-created", to:"abouts#new"
   get "mission-edit", to:"abouts#edit"
   get "dashboard", to:'dashboard#index'
+  #Costumize app
+  get "appsetup", to:'app_setting#index'
   resources :posts
   resources :abouts
   
