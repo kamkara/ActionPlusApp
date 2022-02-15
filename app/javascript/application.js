@@ -9,7 +9,7 @@ import "@rails/actiontext"
 
 
 
-// add these 2 lines
+// add this line
 const images = require.context('../images', true)
 
 
