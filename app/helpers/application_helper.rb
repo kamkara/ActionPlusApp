@@ -2,7 +2,7 @@ module ApplicationHelper
 
     #Onglet Title
 def title
- base_title = "Action+ Association"
+ base_title = "– Action+ Missions humanitaires"
   if @title.nil?
   base_title
   else
@@ -15,6 +15,9 @@ def description
   "Action+ ......"
 end
 
+def keywords
+  "Faire un don, don, association, ong, donner, don en ligne, don sécurisé, soutenir, donation, make a donation"
+end
   #Sign in and up anywhere on app
     def resource_name
     :user
