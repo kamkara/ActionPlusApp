@@ -3,6 +3,7 @@
 //= link images/logement.jpeg
 //= link images/icon-apartment.png
 //= link images/ActionIco.jpg
+//= link images/ActionIco-r.png
 //= link images/icon-house.png
 //= link images/icon-housing.png
 //= link images/icon-building.png
