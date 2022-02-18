@@ -1,64 +1,67 @@
-<% @title="Notre mission" %>
-<div class="w-full">
-    <!-- Navbar Start -->
-        <div class="container-fluid nav-bar bg-transparent">
-            <%= render "welcome/shared/navbar" %>
-        </div>
-        <!-- Navbar End -->
-
-        <!-- Header Start -->
-        <div class="container-fluid header bg-white p-0">
-            <%= render "welcome/shared/header" %>
-        </div>
-        <!-- Header End -->
-  <div class="flex justify-between items-center">
-    <h1 class="font-bold text-4xl">Notre Mission</h1>
-    
-  </div>
-
-  <div id="abouts" class="min-w-full">
-    <div class="container">
-      <div class="mx-40 bg-white border-1 rounded-md ">
-          <%= render @abouts %>
-          <div class="m-8 p-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi ea culpa, in unde nostrum ipsum nulla placeat. Deleniti exercitationem repellat vel fuga laboriosam nam nemo esse eaque nihil libero.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, beatae. Omnis modi dignissimos debitis dolorum ab cupiditate unde maiores assumenda iste, ipsum quam eos, distinctio dicta reiciendis dolorem, expedita saepe!
-          </div>
-
-      </div>
-          <div class="flex justify-between items-center">
-          <%= link_to 'Adherer a Action+', new_about_path, class: "btn btn-primary py-3 px-5 me-3 animated fadeIn my-2 text-md font-medium" %>
-          </div>
-          <div class="flex justify-between items-center">
-          <%= render "abouts/shared/testimonial" %>
-          </div>
+<div class="w-full container-xxl bg-gray-200 p-0">
+  <!-- component -->
+   <!-- Navbar Start -->
+    <div class="container-fluid nav-bar bg-transparent">
+      <%= render "welcome/shared/navbar" %>
+      <%= render "abouts/shared/decouvrir" %>
     </div>
-  <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <%= render "welcome/shared/footer" %>
+  <!-- Navbar End -->
+  <div class="flex-1 flex flex-col overflow-hidden">
+  <!-- Header -->
+    <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
+      <div class="container mx-auto px-6 py-8">
+        <div class="flex justify-between items-center">
+          Accueil . Découvrir
+          <h3 class="text-gray-700 text-3xl font-medium fadeIn text-primary"> Action<sup class="">+</sup></h3>
         </div>
+        <div class="mt-8">
+          <!-- Header -->
+          <div id="posts" class="min-w-full">
+            <div class=" p-5 mt-lg-5">
+            <h1 class="display-5 animated fadeIn mb-4">
+            Action<sup class="">+</sup> <span class="text-primary">Agir ensemble</span>,  pour un avenir meilleur
+            </h1>
+            <p class="animated fadeIn mb-4 pb-2"><span class="fadeIn animated fon-bold text-primary">
+            Action<sup class="">+</sup></span> PRÈS DE 811 MILLIONS DE PERSONNES SOUFFRENT DE LA XX DANS LE MONDE. NOUS MENONS LE COMBAT CONTRE CE FLÉAU.</p>
+            
+          </div>
+ 
+            <h2 class="animated fadeIn">UNE ASSOCIATION HUMANITAIRE AFRICAINE</h2>
+            <p class="">
+            Créée en 1979, notre association loi 1901 est une organisation non-gouvernementale 
+            de solidarité internationale (ONG) – Action contre la Faim – lutte contre la faim dans
+            le monde. Les conflits, les dérèglements climatiques, la pauvreté, les inégalités d’accès
+              à l’eau, aux soins, sont autant de causes de la malnutrition. Notre mission est de sauver
+              des vies en éliminant la faim par la prévention, la détection et le traitement de la 
+              sous-nutrition, en particulier pendant et
+            après les situations d’urgence liées aux conflits et aux catastrophes naturelles.
+            </p>
+            <h2 class="animated fadeIn my-4">SOLIDARITÉ INTERNATIONALE CONTRE LA MAl</h2>
 
+            <p class=""> 
+            Aujourd’hui, Action contre la Faim est un acteur majeur de la lutte contre la faim dans le monde.
+            Structurée en réseau international, notre organisation à but non lucratif mène une réponse coordonnée,
+              dans près de 50 pays. Reconnue d’utilité publique, la priorité de notre association est d’agir 
+              concrètement sur le terrain et témoigner sur le sort des populations que nous soutenons.
+            </p>
+            <p class=""> 
+              Fondée par un groupe de médecins et d’intellectuels français, notre ONG de solidarité internationale
+              vient en aide à près de 20 millions de personnes dans le monde chaque année principalement en Asie,
+                en Amérique du Sud, en Afrique mais aussi en Europe. Depuis 2019, Action contre la Faim est membre 
+                d’Alliance Urgences, un collectif de 6 ONG dont l’objectif est de créer un élan de solidarité 
+                nationale autour d’une urgence humanitaire bien définie.
+            </p>
+            <p class="">
+            Parce que les causes de la faim sont multiples, conflits, climat, genre, notre réponse est multisectorielle et s’appuie sur une forte expertise.
+            </p>
+
+            <div class="my-4">
+            <%= render "abouts/shared/experts" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
 </div>
+      
