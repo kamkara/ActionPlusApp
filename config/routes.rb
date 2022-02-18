@@ -5,10 +5,11 @@ Rails.application.routes.draw do
   get 'adhesion', to:'membership#index'
   get "organisation", to:'membership#organisation'
   get "memberspace", to:'membership#memberspace'
+  get "actualites", to:"posts#index"
   get "writing", to:"posts#new"
   get "posts-edit", to:"posts#edit"
   get "posts-destroy", to:"posts#delete"
-  get "mission", to:"abouts#index"
+  get "nous_decouvrir", to:"abouts#index"
   get "mission-created", to:"abouts#new"
   get "mission-edit", to:"abouts#edit"
   get "dashboard", to:'dashboard#index'

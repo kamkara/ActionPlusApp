@@ -10,8 +10,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto">         
-            <%= link_to 'Nous découvrir', mission_path, class:"nav-item nav-link active" %>
-            <%= link_to 'Mission', root_path, class:"nav-item nav-link" %>
+            <%= link_to 'Actualités', actualites_path, class:"nav-item nav-link active" %>
+            <%= link_to 'Nous découvrir', nous_decouvrir_path, class:"nav-item nav-link" %>
+            
             <%= link_to 'Agir Ensemble', root_path, class:"nav-item nav-link" %>
             <div class="nav-item dropdown">
                 <%= link_to root_path, class:"nav-link dropdown-toggle", "data-bs-toggle":"dropdown" do %>En Action<% end %>
@@ -21,16 +22,7 @@
                     <%= link_to root_path, class:"dropdown-item" do %>Missions <% end %>
                 </div>
             </div>
-            <div class="nav-item dropdown">
-                <%= link_to root_path,  class:"nav-link dropdown-toggle", "data-bs-toggle":"dropdown" do %>Actualités<% end %>
-                <div class="dropdown-menu rounded-0 m-0">
-                    <%= link_to 'Faim', root_path, class:"dropdown-item" %>
-                    <%= link_to 'Education', root_path, class:"dropdown-item" %>
-                    <%= link_to 'Logements', root_path, class:"dropdown-item" %>
-                    <%= link_to 'Santé', root_path, class:"dropdown-item" %>
-                    
-                </div>
-            </div>        
+                   
             <%= link_to 'Espace Action+', adhesion_path, class:"nav-item nav-link" %>
         </div>      
         <%= link_to 'Donnez', donate_path, class:"btn btn-primary px-3 d-none d-lg-flex" %>

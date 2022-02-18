@@ -1,35 +1,27 @@
-<div class="w-full">
-  <% if notice.present? %>
-    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
-  <% end %>
-
-<!-- component -->
-  <div>
-      <div x-data="{ sidebarOpen: false }" class="flex h-screen bg-gray-200">
-          <div :class="sidebarOpen ? 'block' : 'hidden'" @click="sidebarOpen = false" class="fixed z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"></div>
-          <!-- Sidebar -->
-          <%= render "dashboard/shared/sidebar" %>
-            
-          <div class="flex-1 flex flex-col overflow-hidden">
+<div class="w-full container-xxl bg-gray-200 p-0">
+  <!-- component -->
+   <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <%= render "welcome/shared/navbar" %>
+            <%= render "/shared/actualites" %>
+        </div>
+        <!-- Navbar End -->
+  <div class="flex-1 flex flex-col overflow-hidden">
+  <!-- Header -->
+    <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
+      <div class="container mx-auto px-6 py-8">
+        <div class="flex justify-between items-center">
+          <h3 class="text-gray-700 text-3xl font-medium"> NOS ACTUALITÉS À LA UNE</h3>
+                       NOS ACTUALITÉS À LA UNE
+        </div>
+        <div class="mt-8">
           <!-- Header -->
-          <%= render "dashboard/shared/header" %>
-              <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
-                  <div class="container mx-auto px-6 py-8">
-                    <div class="flex justify-between items-center">
-                      <h3 class="text-gray-700 text-3xl font-medium">Les articles</h3>
-                      <%= link_to 'Créer un Article', writing_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
-                    </div>
-                      <div class="mt-8">
-                          <!-- Header -->
-                          <div id="posts" class="min-w-full">
-                        <%= render @posts %>
-                      </div>
-                      </div>
-      
-                      
-                  </div>
-              </main>
+          <div id="posts" class="min-w-full">
+            <%= render @posts %>
           </div>
+        </div>
       </div>
+    </main>
   </div>
 </div>
+      
