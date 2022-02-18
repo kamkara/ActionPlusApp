@@ -2,7 +2,7 @@ module ApplicationHelper
 
     #Onglet Title
 def title
- base_title = "Action+ Missions humanitaires"
+ base_title = "Action+  Missions humanitaires"
   if @title.nil?
   base_title
   else
