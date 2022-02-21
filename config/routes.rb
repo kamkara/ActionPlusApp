@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   root to:'welcome#index'
-  get "donate", to:'donate#index'
+  get "nous_aider", to:'donate#index'
   get 'adhesion', to:'membership#index'
   get "organisation", to:'membership#organisation'
   get "memberspace", to:'membership#memberspace'

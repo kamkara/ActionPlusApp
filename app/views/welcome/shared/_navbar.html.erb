@@ -13,6 +13,7 @@
             <%= link_to 'Actualités', actualites_path, class:"nav-item nav-link active" %>
             <%= link_to 'Nous découvrir', nous_decouvrir_path, class:"nav-item nav-link" %>
             
+            <%= link_to 'Nous aider', nous_aider_path, class:"nav-item nav-link" %>
             <%= link_to 'Agir Ensemble', root_path, class:"nav-item nav-link" %>
             <div class="nav-item dropdown">
                 <%= link_to root_path, class:"nav-link dropdown-toggle", "data-bs-toggle":"dropdown" do %>En Action<% end %>
@@ -25,6 +26,6 @@
                    
             <%= link_to 'Espace Action+', adhesion_path, class:"nav-item nav-link" %>
         </div>      
-        <%= link_to 'Donnez', donate_path, class:"btn btn-primary px-3 d-none d-lg-flex" %>
+        <%= link_to 'Donnez', nous_aider_path, class:"btn btn-primary px-3 d-none d-lg-flex" %>
     </div>
 </nav>
