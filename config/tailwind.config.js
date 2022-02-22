@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'signIpImg': "url('~/images/back-2.png')",
+        'signUpImg': "url('~/back-8.png')",
+      },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
