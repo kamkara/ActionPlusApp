@@ -1,8 +1,4 @@
-
-
-
-
-<% @title="Adherer a Action+" %>
+<% @title="Adhérer à Action+" %>
 
 <!-- component -->
 <div class="h-screen md:flex">
@@ -15,8 +11,10 @@
       </span>
       <br> à l'organisation humanitaire Action<sup>+</sup>
       </h1>
-			<p class="text-white mt-1">Actoin+ en Lorem ipsum dolor sit  tenetur atque nesciunt. Natus?!</p>
+			<p class="text-black mt-1">Vous voulez contribuer à sauver des vies ? <br> Rejoignez les 1 433 adhérents de Action<sup>+</sup> !
+<br> <span class="font-semibold underline"> C'est facile, gratuit et 3 minutes suffiront.</span></p>
 			
+    <button type="submit" class="block uppercase  bg-white text-indigo-600 mt-4 py-2 rounded-2xl font-bold m-2" onclick="openModal('modal')" >Apprendre plus sur Action<sup>+</sup></button>
 		</div>
 		<div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
 		<div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
@@ -28,8 +26,11 @@
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= render "shared/flash" %>
 
-			<h1 class="text-gray-800 font-bold text-2xl mb-2">Bienvenu(e) sur Action+</h1>
-			<p class="text-sm font-normal text-gray-600 mb-2">Devenez Membre Adhérant Particulier de Action+</p>
+			<h1 class="text-gray-800 font-bold text-2xl mb-2">Vous et Action<sup>+</sup> Agisons Ensemble pour sauver des vies</h1>
+			<p class="text-sm font-normal text-gray-600 mb-2">Devenez Membre Adhérant de Action<sup>+</sup>
+      
+      </p>
+
 			<div class="flex items-center mt-8 mb-2">
           <%= f.text_field :first_name, class:"placeholder:italic placeholder:text-slate-400 outline-none border rounded-md py-2 w-full", placeholder:"Nom ..." %>
           <%= f.text_field :last_name, class:"placeholder:italic placeholder:text-slate-400 outline-none border ml-2 rounded-md py-2 w-full", placeholder:"Prénom..." %>
@@ -64,3 +65,39 @@
 		<% end %>
 	</div>
 </div>
+
+
+        <!-- Modal apprendre plus -->
+
+
+<div id="modal" class="fixed hidden z-50 inset-0 bg-gray-900 bg-opacity-60 overflow-y-auto h-full w-full px-4">
+    <div class="relative top-40 mx-auto shadow-lg rounded-md bg-white max-w-md">
+
+        <!-- Modal header -->
+        <div class="flex justify-between items-center bg-green-500 text-white text-md rounded-t-md px-4 py-2">
+            <h3 class="uppercase">charte des valeurs</h3>
+            <button onclick="closeModal()">x</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="max-h-48 overflow-y-scroll p-4">
+            <p>Scrollable modal body</p>
+            <p>Scrollable modal body</p>
+            <p>Scrollable modal body</p>
+            <p>Scrollable modal body</p>
+            <p>Scrollable modal body</p>
+            <p>Scrollable modal body</p>
+            <p>Scrollable modal body</p>
+            <p>Scrollable modal body</p>
+            <p>Scrollable modal body</p>
+            <p>Scrollable modal body</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="px-4 py-2 border-t border-t-gray-500 flex justify-end items-center space-x-4">
+            <button class="bg-blue-500 text-black border-1 rounded-md px-4 py-2 rounded-md hover:bg-blue-700 transition" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+</div>
+
+
